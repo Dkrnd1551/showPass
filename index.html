@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Show password</title>
+  </head>
+  <body>
+    <main>
+      <section>
+        <div class="container">
+          <div class="wrapper">
+            <div class="logo">
+              <img src="logo.jpg" alt="Logo" />
+            </div>
+            <div class="content">
+              <form action="#">
+                <table>
+                  <tr>
+                    <td align="left">Username</td>
+                    <td align="right">
+                      <input
+                        type="text"
+                        id="username"
+                        class="input-data"
+                        onkeyup="onSubmit()"
+                      />
+                    </td>
+                  </tr>
+                  <tr>
+                    <td align="left">Password</td>
+                    <td align="right">
+                      <input
+                        type="password"
+                        id="password"
+                        class="input-data"
+                        onkeyup="onSubmit()"
+                      />
+                      <i class="far fa-eye show-icon" id="togglePassword"></i>
+                    </td>
+                  </tr>
+                </table>
+                <button type="submit" class="button" disabled>Login</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <script src="app.js"></script>
+  </body>
+</html>
